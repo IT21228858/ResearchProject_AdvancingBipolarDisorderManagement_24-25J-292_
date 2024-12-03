@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Bipolar-Disorder",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "downloads",
+      "storage",
+      "tabs",
+      "webNavigation",
+      "tabCapture", 
+      "offscreen",
+      "declarativeContent"
+    ],
+    "host_permissions": [
+    "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_script/content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Click Me"
+    },
+    "icons": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+}
