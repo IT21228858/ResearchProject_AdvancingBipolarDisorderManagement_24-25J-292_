@@ -17,34 +17,62 @@
    #Architecture
 ------------------
 
-#[Camera Input] 
-      ↓ 
-#[Frame Capture] 
-      ↓ 
-#[Preprocessing] 
-   - Grayscale Conversion
-   - Face Detection (Haar Cascade)
-   - Extract Region of Interest (ROI)
-      ↓ 
-#[Model Processing]
-   - Resize ROI (224x224)
-   - Normalize Pixel Values
-   - Predict Emotion (Using Pre-trained Model)
-      ↓ 
-#[Emotion Output]
-   - Match Probabilities to Emotion Labels
-   - Determine Maximum Probability
-      ↓ 
-#[Visualization]
-   - Draw Bounding Box on Frame
-   - Annotate Emotion on Frame
-      ↓ 
-#[Display Output]
-   - Show Frame in Real-time Window
-      ↓ 
-#[Exit Condition]
-   - User Input ('q' Key) or Close Window
-      ↓ 
-#[Release Resources]
+#\[Camera Input\]
 
--------------------------------------------
+↓
+
+#\[Frame Capture\]
+
+↓
+
+#\[Preprocessing\]
+
+\- Grayscale Conversion
+
+\- Face Detection (Haar Cascade)
+
+\- Extract Region of Interest (ROI)
+
+↓
+
+#\[Model Processing\]
+
+\- Resize ROI (224x224)
+
+\- Normalize Pixel Values
+
+\- Predict Emotion (Using Pre-trained Model)
+
+↓
+
+#\[Emotion Output\]
+
+\- Match Probabilities to Emotion Labels
+
+\- Determine Maximum Probability
+
+↓
+
+#\[Visualization\]
+
+\- Draw Bounding Box on Frame
+
+\- Annotate Emotion on Frame
+
+↓
+
+#\[Display Output\]
+
+\- Show Frame in Real-time Window
+
+↓
+
+#\[Exit Condition\]
+
+\- User Input ('q' Key) or Close Window
+
+↓
+
+#\[Release Resources\]
+
+
