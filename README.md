@@ -20,24 +20,10 @@ Machine Learning Libraries (Scikit-learn)
 
 # System architecture diagram
 
-+------------------+          +----------------+          +----------------+
-|  Browser History |          |  User Text     |          |   Audio Input  |
-|  (Flask API)     |          |  Input         |          |                |
-+------------------+          +----------------+          +----------------+
-         |                           |                          |
-         v                           v                          v
-+--------------------------------------------------------------+
-|                      Flask Backend                           |
-+--------------------------------------------------------------+
-         |                           |                          |
-         v                           v                          v
-+-------------------+       +--------------------+       +--------------------+
-| Text Detection    |       | Audio Detection    |       |  Prediction &       |
-| Model             |       | Model              |       |  Insights           |
-+-------------------+       +--------------------+       +--------------------+
-                                       |
-                                       v
++------------------+ +----------------+ +----------------+ | Browser History | | User Text | | Audio Input | | (Flask API) | | Input | | | +------------------+ +----------------+ +----------------+ | | | v v v +--------------------------------------------------------------+ | Flask Backend | +--------------------------------------------------------------+ | | | v v v +-------------------+ +--------------------+ +--------------------+ | Text Detection | | Audio Detection | | Prediction & | | Model | | Model | | Insights | +-------------------+ +--------------------+ +--------------------+ | v +-----------------------+ | Intervention Module | | (Personalized Actions)| +-----------------------+
                             +-----------------------+
-                            | Intervention Module   |
-                            | (Personalized Actions)|
-                            +-----------------------+
+### Explanation:
+- **Triple backticks** (\`\`\`) indicate the start and end of a code block.
+- This ensures the text is displayed exactly as written, preserving the ASCII art.
+
+Place this correctly formatted block into your `README.md`, and it will render as a properly formatted diagram.
